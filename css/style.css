@@ -1,0 +1,85 @@
+body {
+	background: ghostwhite;
+	font-family: 'Exo 2', sans-serif;
+}
+
+h1 {
+	font-size: 1.6em;
+	font-weight: 900;
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+	margin: 20px 0 40px;
+}
+
+header {
+	margin-bottom: 60px;
+	height: fit-content;
+	box-shadow: 0 0 5px 1px grey;
+}
+
+nav {
+	display: flex;
+	flex-flow: row;
+	gap: 5px;
+	justify-content: center;
+	align-items: center;
+	padding: 10px;
+	background: white;
+}
+
+nav img {
+	max-width: 35px;
+	border-radius: 50px;
+	box-shadow: 0 0 3px 1px #2898e0;
+}
+
+nav h1 {
+	margin-bottom: 0;
+	text-shadow: 0 0 2px #2898e0;
+}
+
+#newTaskInput {
+	height: 85px;
+}
+
+.tasks-list-container {
+	min-height: 10vh;
+}
+
+.tasksList {
+	display: flex;
+	flex-flow: column;
+	gap: 15px;
+}
+
+.listItem {
+	background: ghostwhite;
+	padding: 10px 15px;
+	border-radius: 5px;
+	box-shadow: 0 0 3px 1px #cbc2c2b5;
+	transition: all 0.2s linear;
+	cursor: pointer;
+}
+
+.listItem:hover {
+	box-shadow: 0 0 4px 2px #99a0a1ce;
+}
+
+.listItem:active {
+	box-shadow: inset 0 0 3px 1px grey;
+}
+
+.listItem span {
+	font-size: 1em;
+	font-style: oblique;
+	text-transform: lowercase;
+}
+
+/* used to show complited task */
+.task-completed {
+	text-decoration: line-through;
+	background: #a9c34a12 !important;
+}
